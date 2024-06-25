@@ -16,7 +16,8 @@ namespace IoTSensorReadingsFromPiToAzure
             _builder = new ConfigurationBuilder()
                                 .SetBasePath(Directory.GetCurrentDirectory())
                                 .AddEnvironmentVariables()
-                                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                                .AddUserSecrets<Program>();
             
             _configuration = _builder.Build();
         }
