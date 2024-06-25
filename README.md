@@ -122,6 +122,29 @@ Create an Azure storage account, then add a table storage to it.  Get the name o
 
     You will need the connection string for the function app to connect to the storage account.
 
+### Azure Cosmos DB
+
+I added a cosmos db to try to visualize the data better using PowerBI and Azure Synapse Link
+
+1. Create an Azure Cosmos DB
+
+    [Create a FREE Cosmos DB](https://learn.microsoft.com/azure/cosmos-db/create-cosmosdb-resources-portal?WT.mc_id=AZ-MVP-5004334)
+
+1. Create a database
+
+    Keep track of what you named it
+
+1. Create a container
+
+    Keep track of what you named it
+
+1. Get the connection string
+
+    [Get the connection string](https://learn.microsoft.com/azure/cosmos-db/nosql/how-to-dotnet-get-started?WT.mc_id=AZ-MVP-5004334)  
+
+    You will need the connection string for the function app to connect to the cosmos db.  You will also need the container name and the db name.
+
+
 ### Azure Function App
 
 You will also need to create an azure function app (consumption is fine unless you need a network).  
@@ -136,6 +159,17 @@ You will also need to create an azure function app (consumption is fine unless y
 
     ![Enable SCM Basic Auth Publishing Credentials](images/SCMBasicAuthPublishingCredentials.png)
 
+
+1. Add all the credentials
+
+    - Cosmos DB Connection String
+    - Storage Account Connection String
+    - IoT Hub Connection String
+    - Table Name for the Storage Account
+    - Cosmos DB Database Name
+    - Cosmos DB Container Name
+
+    ![Function App Environment Variables](images/FunctionAppEnvironmentVariables.png)  
 
 ## DeviceCode App
 

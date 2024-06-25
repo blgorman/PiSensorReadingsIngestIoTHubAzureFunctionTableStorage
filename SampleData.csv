@@ -1,0 +1,2 @@
+PartitionKey,RowKey,Timestamp,DeviceId,DeviceId@type,Lux,Lux@type,Proximity,Proximity@type,TemperatureCelsius,TemperatureCelsius@type,PressureHectoPascals,PressureHectoPascals@type,RelativeHumidityPercent,RelativeHumidityPercent@type,EstimatedAltitudeMeters,EstimatedAltitudeMeters@type
+pifromhome,638548947320028604,2024-06-25T06:45:32.0113465Z,pifromhome,String,00.00 Lux,String,46.00,String,21.2?C,String,974.47 hPa,String,48.72%,String,338 m,String
