@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>807df178-fb67-42f2-a2a2-1c7a8e86fa95</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="Certificates\sensor-2000-device.cert.pfx" />
+    <None Remove="Certificates\sensor-2001-device.cert.pfx" />
+    <None Remove="Certificates\sensor-thl-2000-device.cert.pfx" />
+    <None Remove="Certificates\sensor-thl-2001-device.cert.pfx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Azure.Devices.Client" Version="1.40.0" />
+		<PackageReference Include="Microsoft.Azure.Devices.Provisioning.Client" Version="1.19.1" />
+		<PackageReference Include="Microsoft.Azure.Devices.Provisioning.Transport.Amqp" Version="1.16.1" />
+		<PackageReference Include="Microsoft.Azure.Devices.Provisioning.Transport.Http" Version="1.15.1" />
+		<PackageReference Include="Microsoft.Azure.Devices.Provisioning.Transport.Mqtt" Version="1.17.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="6.0.0-*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0-*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Certificates\sensor-2000-device.cert.pfx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Certificates\sensor-2001-device.cert.pfx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Certificates\sensor-thl-2000-device.cert.pfx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Certificates\sensor-thl-2001-device.cert.pfx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+</Project>
