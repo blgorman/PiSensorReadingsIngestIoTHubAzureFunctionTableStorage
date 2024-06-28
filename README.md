@@ -116,7 +116,7 @@ Create an Azure storage account, then add a table storage to it.  Get the name o
 
     Whatever you name the table, you will need to remember that name for the function app.
 
-1. Retreive the connection string
+1. Retrieve the connection string
 
     [Get the connection string](https://learn.microsoft.com/azure/storage/common/storage-account-get-info?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&bc=%2Fazure%2Fstorage%2Fblobs%2Fbreadcrumb%2Ftoc.json&tabs=portal&WT.mc_id=AZ-MVP-5004334#get-a-connection-string-for-the-storage-account)    
 
@@ -260,6 +260,10 @@ The function app is configured to respond to an event grid trigger.  Since IoT H
 - Leverages user.secret for the connection string to the storage account
 
 ---
+
+## Slides
+
+You can view the slides [for presenting this repo here](https://training.majorguidancesolutions.com/courses/blog-posts-and-talks/contents/667e71d82ef93)
 
 ## Conclusion
 
