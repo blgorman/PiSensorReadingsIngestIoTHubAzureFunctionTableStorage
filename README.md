@@ -265,6 +265,10 @@ The function app is configured to respond to an event grid trigger.  Since IoT H
 
 You can view the slides [for presenting this repo here](https://training.majorguidancesolutions.com/courses/blog-posts-and-talks/contents/667e71d82ef93)
 
+## Additional Resources
+
+Jim Bennett pointed me to [this repository which is very interesting for anyone getting started with IoT and Azure](https://github.com/microsoft/IoT-For-Beginners) 
+
 ## Conclusion
 
 With everything in place and the project(s) running you should be collecting telemetry data, processing with a function app, and pushing the event data to table storage.
